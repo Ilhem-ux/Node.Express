@@ -1,0 +1,8 @@
+<h1>Tâches</h1>
+<ul> <% tasks.forEach(task => { %>
+<li>
+<%= task.title %> - <% if (task.done) { %> <% } else { %> <% } %>
+</li>
+<% }) %>
+</ul>
+<a href="/">Retour à l'accueil</a>
